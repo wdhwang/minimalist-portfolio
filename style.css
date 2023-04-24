@@ -3,7 +3,7 @@
 
 .grid-2{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 body{
@@ -12,7 +12,6 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
     color: #7A7C80;
-
 }
 
 h2,.black{
@@ -66,7 +65,7 @@ a{
     padding: 5px;
     font-size: 1.2rem;
     padding-left: 0;
-    width: 200px;
+    width: 500px;
 }
 /* animations / utilities */
 .section-2 a:hover{
@@ -83,7 +82,7 @@ a{
 }
 
 /* media queres */
-@media(max-width:1024px){
+@media(max-width:780px){
     .grid-2{
         grid-template-columns: 1fr;
     }
