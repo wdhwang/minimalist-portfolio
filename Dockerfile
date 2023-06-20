@@ -5,6 +5,7 @@ RUN set -x \
     && apk upgrade \
     && apk add --no-cache --virtual .builddeps git \
     && git clone https://github.com/wdhwang/minimalist-portfolio.git /usr/local/onepage \
+    #&& git -c http.sslVerify=false clone https://msmp.my:8443/root/minimalist-portfolio.git /usr/local/onepage \
     && cd /usr/local/onepage && git clean -Xdf \
     && rm -f ./.githash && git log --pretty=format:"%h" -1 > ./.githash
 
